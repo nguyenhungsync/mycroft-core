@@ -235,6 +235,7 @@ class MycroftSkill(object):
         """ Get a more 'human' version of the location as a string. """
         loc = self.location
         if type(loc) is dict and loc["city"]:
+            print(loc)
             return loc["city"]["name"]
         return None
 
